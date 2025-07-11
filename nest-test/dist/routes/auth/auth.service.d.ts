@@ -6,10 +6,10 @@ export declare class AuthService {
     constructor(hashingService: HashingService, prismaService: PrismaService);
     register(body: any): Promise<{
         id: number;
-        email: string;
-        name: string;
-        password: string;
         createdAt: Date;
         updatedAt: Date;
+        name: string;
+        email: string;
+        password: string;
     }>;
 }
